@@ -1,4 +1,8 @@
+import { useState, useEffect } from 'react'
+
 function App() {
+  
+  
   return (
     <>
       {/* ***** Header Area Start ***** */}
@@ -87,7 +91,7 @@ function App() {
                 </a>
               </div>
               <div className="one_half last">
-                <a href="#" id="register_form" className="btn">
+                <a href="#" id="register_form" className="btn" onClick={(e) => { e.preventDefault(); setModalView('register'); }}>
                   Sign up
                 </a>
               </div>
